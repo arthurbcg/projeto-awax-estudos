@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* aqui começa as estilizações do header*/
+
+header {
+    height: 100px;
+    background-color: black;
+    color: #fff;
+}
+
+.header{
+    max-width: 1140px;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+}
+
+.menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul, .menu li{
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100px;
+    align-items: center;
+    border-bottom: 5px solid black;
+    font-size: 14px;
+}
+
+.menu li a:hover, .menu .active a {
+    border-bottom: 5px solid #b28756;
+    color: #CCC;
+}
+
+.logo-img{
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+    border-radius: 40px;
+}
+
+/* aqui começa as estilizações do main*/
+
+.banner{
+    height: calc(100vh - 100px);
+    background-color: #b28756;
+    background-image: url("../imgs/bg.jpg");
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.banner .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slide-area{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    > h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    > h1 span {
+        color: #b28756;
+    }
+
+    > h2 {
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+
+    > a {
+        display: block;
+        background-color: #b28756;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}
