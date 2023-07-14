@@ -500,3 +500,63 @@ header {
         background-color: #b28756;
     }
 }
+
+/* aqui começa as estilizações de areas especificas -> clients*/
+
+.section-clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    > h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    > span {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    > p {
+        text-align: center;
+        max-width: 600px;
+        font-size: 14px;
+    }
+}
+
+.section-clients .icone-clients{
+    width: 20px;
+    margin-bottom: 5px;
+}
+
+.section-body .sliders-pointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-body .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.section-body .pointer.active {
+    background-color: #b28756;
+}
