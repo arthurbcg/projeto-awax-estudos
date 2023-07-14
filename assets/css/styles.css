@@ -276,3 +276,91 @@ header {
 .section-service:first-child{
     border-left: 1px solid #333;
 }
+
+/* aqui começa as estilizações de areas especificas -> projects*/
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-projects--filters{
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 20px;
+    margin: auto;
+
+    > ul, li {
+        list-style: none;
+    }
+
+    > ul li {
+        display: inline-block;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 12px;
+        border-left: 1px solid #CCC;
+        color: #555;
+        border-bottom: 3px solid #EEE;
+        cursor: pointer;
+    }
+
+    > ul li:hover, ul li.active {
+        border-bottom: 3px solid #b28756;
+    }
+
+    > ul li:first-child{
+        border-left: 0;
+    }
+}
+
+.section-projects--photos{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo{
+    width: 280px;
+}
+
+.section-projects-photoarea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+    cursor: pointer;
+
+    > img {
+        width: inherit;
+        height: inherit;
+        display: block;
+    }
+}
+
+.section-projects-photoarea:hover .section-projects--photoinfo{
+    display: flex;
+}
+
+.section-projects--photoinfo{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+    > h5 {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
