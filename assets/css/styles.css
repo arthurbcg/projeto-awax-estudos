@@ -364,3 +364,139 @@ header {
         font-weight: 600;
     }
 }
+
+/* aqui começa as estilizações de areas especificas -> team*/
+
+.bg-team{
+    background-image: url("../imgs/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-team-area{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-team{
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+
+.section-team .slide{
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.section-team .slide-area{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    padding: 30px;
+
+    > h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    > h1 span {
+        color: #b28756;
+    }
+
+    > h2 {
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+
+    > a {
+        display: block;
+        background-color: #b28756;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 10px 30px;
+        margin-top: 30px;
+        border-radius: 20px;
+    }
+}
+
+.section-team-area .sliders-pointers {
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-team-area .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.section-team-area .pointer.active {
+    background-color: #b28756;
+}
+
+.section-team--avatar{
+    width: 150px;
+    height: auto;
+}
+
+.section-team--name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.section-team--role{
+    font-size: 14px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.section-team--social{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    > a {
+        margin-right: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 13px;
+        background-color: #CCC;
+    }
+
+    > a:hover {
+        background-color: #b28756;
+    }
+}
