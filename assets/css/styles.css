@@ -770,7 +770,7 @@ header {
     color: #999;
 }
 
-.section-share--legend {
+.section-share-legend {
     display: flex;
     align-items: center;
     margin-right: 40px;
@@ -780,7 +780,7 @@ header {
     }
 }
 
-.section-share--item {
+.section-share-item {
     font-size: 12px;
     margin-right: 20px;
     display: flex;
@@ -788,7 +788,7 @@ header {
     cursor: pointer;
 }
 
-.section-share--icon {
+.section-share-icon {
     width: 30px;
     height: 30px;
     border-radius: 15px;
@@ -803,23 +803,23 @@ header {
     }
 }
 
-.section-share--icon.twitter {
+.section-share-icon.twitter {
     background-color: #34c5f0;
 }
 
-.section-share--icon.linkedin {
+.section-share-icon.linkedin {
     background-color: #127cb4;
 }
 
-.section-share--icon.facebook {
+.section-share-icon.facebook {
     background-color: #336297;
 }
 
-.section-share--icon.googleplus {
+.section-share-icon.googleplus {
     background-color: #e74237;
 }
 
-.section-share--icon.pinterest {
+.section-share-icon.pinterest {
     background-color: #b71c29;
 }
 
@@ -847,11 +847,11 @@ header {
     margin-top: 10px;
 }
 
-.section-contact--split {
+.section-contact-input {
     display: flex;
 }
 
-.section-contact--split input:first-child {
+.section-contact-input input:first-child {
     margin-right: 20px;
 }
 
@@ -901,4 +901,76 @@ header {
         width: 15px;
         height: auto;
     }
+}
+
+
+/* aqui começa as estilizações do footer*/
+
+footer {
+    background-color:#000;
+    padding:20px;
+}
+
+.footer-area {
+    max-width:1140px;
+    margin:auto;
+    color:#FFF;
+    display:flex;
+}
+
+.footer-item {
+    flex:1;
+}
+
+.footer-social {
+    display:flex;
+
+    > a {
+        display:block;
+        width:25px;
+        height:25px;
+        background-color:#333;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:13px;
+        margin-right:10px;
+    }
+
+    > a:hover {
+        background-color:#B28756;
+    }
+
+    > img {
+        height:10px;
+    }
+}
+
+.footer-item.area2 {
+    color:#999;
+    line-height:20px;
+    font-size:13px;
+    padding:0 10px 10px 10px;
+}
+
+.footer-item.area3 {
+    > form {
+        background-color:#333;
+        text-align:center;
+        padding:30px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer-item.area3 input {
+    width:100%;
+    height:40px;
+    border:0;
+    background:transparent;
+    border-bottom:1px solid #CCC;
+    outline:0;
+    color:#FFF;
+    font-size:14px;
+    text-align:center;
 }
